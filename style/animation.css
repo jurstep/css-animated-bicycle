@@ -1,0 +1,44 @@
+@keyframes wheel-spin{
+    0%{
+        
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes spic-move{
+    0%{
+       
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+@keyframes spic-move-back{
+    0%{
+        transform: translateX(10px);
+    }
+    100%{
+        
+    }
+}
+@keyframes pedal-spin{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        
+    }
+}
+
+@keyframes blink{
+    0%{
+        
+    }
+    50%{
+        color: #bd2728;
+    }
+    100%{
+        
+    }
+}

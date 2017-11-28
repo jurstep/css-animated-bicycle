@@ -1,0 +1,556 @@
+/* font-family: 'Work Sans', sans-serif; */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Start work */
+body{
+    background: #aadadc;
+    user-select: none;
+}
+.container{
+    /*  TBH this is useless  */
+    width: 100%;
+    max-width: 1920px;
+    
+    height: 100%
+    
+    position: relative;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-container{
+    width: 400px;
+    
+    font-family: 'Work Sans', sans-serif;
+    color: #363638;
+    font-weight: 700;
+    font-size: 10px;
+    
+}
+
+.text-container h2{
+    color: #fffdfa;
+    font-size: 30px;
+    
+    padding: 10px 0;
+}
+
+.sub-title{
+    animation: blink 0.5s linear 0s infinite;
+}
+
+.bike-container{
+    margin-top: 10%;
+    
+    width: 1000px;
+    height: 440px;
+    
+    position: relative;
+}
+
+
+/* Wheel */
+.bike-wheel-tire-fr, .bike-wheel-tire-bc{
+/*    border: 15px #38373d solid;*/
+    border: 20px #363638 solid;
+    border-radius: 50%;
+    
+    width: 230px;
+    height: 230px;
+    
+    position: absolute;
+    bottom: 13px;
+    left: 138px;  
+}
+.bike-wheel-tire-fr{
+    position: absolute;
+    left: 545px;
+}
+
+.bike-wheel-rim{
+    border: 20px #fffdfa solid;
+    border-radius: 50%;
+    
+    width: 190px;
+    height: 190px;
+    
+    position: relative;
+    
+    animation: wheel-spin 4s linear 0s infinite;
+}
+.rim-divider{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    
+    width: 100%;
+    height: 2px;
+    background: #fffdfa;
+}
+.rim-divider:nth-of-type(2){
+    transform: rotate(90deg);
+}
+.rim-divider:nth-of-type(3){
+    transform: rotate(45deg);
+}
+.rim-divider:nth-of-type(4){
+    transform: rotate(-45deg);
+}
+.rim-divider:nth-of-type(5){
+    transform: rotate(-22.5deg);
+}
+.rim-divider:nth-of-type(6){
+    transform: rotate(22.5deg);
+}
+.rim-divider:nth-of-type(7){
+    transform: rotate(-112.5deg);
+}
+.rim-divider:nth-of-type(8){
+    transform: rotate(112.5deg);
+}
+/* Frame */
+.seat-tube, .seat-to-back-wheel, .back-wheel-to-center, .center-to-front1, .center-to-front2, .front-tube{
+    width: 13px;
+    
+    background: #bd2728;
+    position: absolute;
+}
+.circle-front, .circle-back{
+    height: 20px;
+    width: 20px;
+    
+    background: #bd2728;
+    border-radius: 50%;
+ 
+    position: absolute;
+    bottom: 140px;
+    left: 670px;
+}
+.circle-back{
+    left: 266px;
+}
+
+.seat-tube{
+    height: 240px;
+    
+    transform: rotate(-20deg);
+    
+    bottom: 110px;
+    left: 412px;
+}
+.seat-to-back-wheel{
+    height: 213px;
+    
+    transform: rotate(30deg);
+    
+    bottom: 131px;
+    left: 320px;
+}
+.back-wheel-to-center{
+    height: 180px;
+    
+    transform: rotate(-85deg);
+    
+    bottom: 50px;
+    left: 360px;
+}
+.center-to-front1{
+    height: 245px;
+    
+    transform: rotate(50deg);
+    
+    bottom: 140px;
+    left: 518px;
+}
+.center-to-front2{
+    height: 250px;
+    
+    transform: rotate(43deg);
+    
+    bottom: 100px;
+    left: 536px;
+}
+.front-tube{
+    height: 220px;
+    
+    transform: rotate(-18deg);
+    
+    position: absolute;
+    bottom: 140px;
+    left: 640px;
+}
+.circle-center{
+    height: 50px;
+    width: 50px;
+    
+    background: #bd2728;
+    border-radius: 50%;
+ 
+    position: absolute;
+    bottom: 110px;
+    left: 430px;
+}
+/* Chain stars */
+.big-star{
+    height: 30px;
+    width: 30px;
+    
+    border: 13px #363638 solid;
+    border-radius: 50%;
+ 
+    position: absolute;
+    bottom: 105px;
+    left: 425px;
+    
+    animation: wheel-spin 4s linear 0s infinite;
+}
+.big-star-spikes{
+    height: 230%;
+    width: 10px;
+    
+    background: #363638;
+    border-radius: 4px;
+    
+    position: absolute;
+    top: -65%;
+    left: 35%;
+}
+.big-star-spikes:nth-of-type(2){
+    transform: rotate(90deg);
+}
+.big-star-spikes:nth-of-type(3){
+    transform: rotate(30deg);
+}
+.big-star-spikes:nth-of-type(4){
+    transform: rotate(60deg);
+}
+.big-star-spikes:nth-of-type(5){
+    transform: rotate(120deg);
+}
+.big-star-spikes:nth-of-type(6){
+    transform: rotate(150deg);
+}
+.big-white-circle{
+    height: 40px;
+    width: 40px;
+    border: 3px #fffdfa solid;
+    border-radius: 50%;
+    
+    position: absolute;
+    top: -26.5%;
+    left: -26.5%;
+}
+.small-star{
+    height: 6px;
+    width: 6px;
+    border: 10px #363638 solid;
+    border-radius: 50%;
+ 
+    position: absolute;
+    bottom: 135px;
+    left: 260px;
+    
+    animation: wheel-spin 4s linear 0s infinite;
+}
+.small-star-spikes{
+    height: 33px;
+    width: 4px;
+    
+    background: #363638;
+    border-radius: 2px;
+    
+    position: absolute;
+    top: -13.5px;
+    left: 1px;
+}
+.small-star-spikes:nth-of-type(2){
+    transform: rotate(90deg);
+}
+.small-star-spikes:nth-of-type(3){
+    transform: rotate(30deg);
+}
+.small-star-spikes:nth-of-type(4){
+    transform: rotate(60deg);
+}
+.small-star-spikes:nth-of-type(5){
+    transform: rotate(120deg);
+}
+.small-star-spikes:nth-of-type(6){
+    transform: rotate(150deg);
+}
+.small-white-circle{
+    height: 12px;
+    width: 12px;
+    border: 3px #fffdfa solid;
+    border-radius: 50%;
+    
+    position: absolute;
+    top: -100%;
+    left: -100%;
+}
+/* Chains */
+.chain-top, .chain-bottom{
+    background: #514e57;
+    height: 5px;
+    width: 180px;
+    
+    position: absolute;
+    bottom: 155px;
+    left: 270px;
+}
+.chain-bottom{
+    bottom: 122px;
+    
+    transform: rotate(9deg);
+}
+
+.chain-spic-top, .chain-spic-btm{
+    width: 5px;
+    height: 5px;
+    background: lightgrey;
+    border-radius: 1px;
+    
+    position: absolute;
+    left: 5px;
+    
+    animation: spic-move 0.2s linear 0s infinite;
+}
+.chain-spic-btm{
+    animation: spic-move-back 0.2s linear 0s infinite;
+}
+.chain-spic-top:nth-of-type(2), .chain-spic-btm:nth-of-type(2){
+    left: 15px;
+}
+.chain-spic-top:nth-of-type(3), .chain-spic-btm:nth-of-type(3){
+    left: 25px;
+}
+.chain-spic-top:nth-of-type(4), .chain-spic-btm:nth-of-type(4){
+    left: 35px;
+}
+.chain-spic-top:nth-of-type(5), .chain-spic-btm:nth-of-type(5){
+    left: 45px;
+}
+.chain-spic-top:nth-of-type(6), .chain-spic-btm:nth-of-type(6){
+    left: 55px;
+}
+.chain-spic-top:nth-of-type(7), .chain-spic-btm:nth-of-type(7){
+    left: 65px;
+}
+.chain-spic-top:nth-of-type(8), .chain-spic-btm:nth-of-type(8){
+    left: 75px;
+}
+.chain-spic-top:nth-of-type(9), .chain-spic-btm:nth-of-type(9){
+    left: 85px;
+}
+.chain-spic-top:nth-of-type(10), .chain-spic-btm:nth-of-type(10){
+    left: 95px;
+}
+.chain-spic-top:nth-of-type(11), .chain-spic-btm:nth-of-type(11){
+    left: 105px;
+}
+.chain-spic-top:nth-of-type(12), .chain-spic-btm:nth-of-type(12){
+    left: 115px;
+}
+.chain-spic-top:nth-of-type(13), .chain-spic-btm:nth-of-type(13){
+    left: 125px;
+}
+.chain-spic-top:nth-of-type(14), .chain-spic-btm:nth-of-type(14){
+    left: 135px;
+}
+.chain-spic-top:nth-of-type(15), .chain-spic-btm:nth-of-type(15){
+    left: 145px;
+}
+.chain-spic-top:nth-of-type(16), .chain-spic-btm:nth-of-type(16){
+    left: 155px;
+}
+.chain-spic-top:nth-of-type(17), .chain-spic-btm:nth-of-type(17){
+    left: 165px;
+}
+.chain-spic-top:nth-of-type(18), .chain-spic-btm:nth-of-type(18){
+    left: 175px;
+}
+
+/* Pedals */
+.pedal-top, .pedal-bot{
+    background: #737476;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    
+    position: absolute;
+    bottom: 127px;
+    left: 447px;
+    
+    animation: wheel-spin 4s linear 0s infinite;
+}
+.pedal-frame{
+    height: 60px;
+    width: 6px;
+    background: #737476;
+    border-radius: 10px;
+    
+    transform: rotate(45deg);
+    
+    position: absolute;
+    top: -360%;
+    left: 185%;
+}
+
+.pedal-bot .pedal-frame{
+    background: #737476;
+    
+    top: -40%;
+    left: -135%;
+}
+.pedal-leg{
+    background: #1e1e1f;
+    width: 30px;
+    height: 8px;
+    border-radius: 3px;
+    
+    position: absolute;
+    top: -38px;
+    left: 30px;
+    
+    animation: pedal-spin 4s linear 0s infinite;
+}
+
+.pedal-bot .pedal-leg{
+    top: 42px;
+    left: -47px;
+}
+
+/* Seat */
+.seat-sub-tube{
+    width: 10px;
+    height: 50px;
+    
+    background: lightgrey;
+    
+    transform: rotate(-20deg);
+    
+    position: absolute;
+    bottom: 320px;
+    left: 372px;
+}
+.seat-pointy-bit{
+    background: #c26335;
+    
+    width: 60px;
+    height: 10px;
+    
+    border-radius: 50%;
+    
+    position: absolute;
+    bottom: 370px;
+    left: 352px;
+}
+.seat-round-back{
+    background: #c26335;
+    
+    height: 15px;
+    width: 20px;
+    
+    border-radius: 50%;
+    
+    position: absolute;
+    bottom: 363px;
+    left: 349px;
+}
+.seat-flat-bit{
+    background: #c26335;
+    
+    height: 7px;
+    width: 40px;
+    
+    transform: rotate(-10deg);
+    
+    position: absolute;
+    bottom: 367px;
+    left: 360px;
+}
+/* Steering wheel */
+.steering-tube1, .steering-tube2{
+    width: 10px;
+    height: 50px;
+    
+    background: lightgrey;
+    
+    position: absolute;
+}
+.steering-tube1{
+    transform: rotate(-20deg);
+    bottom: 320px;
+    left: 611px;
+}
+.steering-tube2{
+    height: 40px;
+    transform: rotate(70deg);
+    bottom: 352px;
+    left: 617px;
+}
+.steering-half-circle{
+    width: 50px;
+    height: 50px;
+    
+    border-top-right-radius: 60px; 
+    
+    border: 10px solid #e8edf1;
+    border-bottom: 0;
+    border-left: 0;
+    bottom: 0;
+    
+    position: absolute;
+    bottom: 377px;
+    left: 583px;
+}
+.steering-small-circle{
+    width: 10px;
+    height: 10px;
+    background: #e8edf1;
+    
+    border-radius: 50%;
+    
+    position: absolute;
+    bottom: 372px;
+    left: 633px;
+}
+.steering-circle-extension{
+    width: 20px;
+    height: 10px;
+    background: #e8edf1;
+    
+    position: absolute;
+    bottom: 427px;
+    left: 565px;
+}
+.handle-main{
+    background: #c26335;
+    
+    width: 30px;
+    height: 12px;
+    
+    position: absolute;
+    bottom: 426px;
+    left: 540px;
+}
+.handle-end{
+    background: #c26335;
+    
+    width: 12px;
+    height: 12px;
+    
+    border-radius: 50%;
+    
+    position: absolute;
+    bottom: 426px;
+    left: 535px;
+}
